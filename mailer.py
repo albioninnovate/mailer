@@ -37,7 +37,7 @@ def make_msg(textfile, sender, receiver):
         msg = EmailMessage()
         msg.set_content(fp.read())
 
-    msg['Subject'] = f'The contents of {textfile}'
+    msg['Subject'] = f'RE: {textfile}'
     msg['From'] = sender
     msg['To'] = receiver
     return msg
